@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Careers</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/career_styles.css">
+    
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header">
+            <img class="logo" src="images/logo.png" alt="Website Logo" width="50" height="50">
+            <b>Rooms and Meals</b>
+        <div class="header-right">
+          <a href="home.html">Home</a>
+          <a href="room.html">Room</a>
+          <a href="meals.html">Meal</a>
+          <a class="active" href="career.html">Career</a>
+          <a href="letusknow.html">Let Us Know</a>
+          <a href="joinus.html">Join Us</a>
+        </div>
+      </div>
+    <!-- end of header -->
+   
+    <div class="main">
+
+        <div class="top">
+            <p><a style="font-weight:bold; font-size: 20px;">Work with Us</a><br><br>At RoomsAndMeals.com, we provide our people the opportunity to explore their ability, 
+            while engaging in challenging and interesting functions.<br>We believe in exercising freedom of thought, 
+            creativity, integrity, accountability and above all - teamwork.<br><br>If you are passionate about being 
+            a part of our team of professionals, send in your resume to:<br><a style="color:#D4AC0D; text-decoration: underline;">careers@roomsandmeals.com</a></p>
+        </div>
+
+        <div >
+            <h2>Available Careers !</h2>
+        </div>
+
+    <!-- job title buttons -->   
+    <div class="jobs">
+        <button>Assistant (2)</button>
+        <button>Bartender (1)</button>
+        <button>Cook (3)</button>
+        <button>Chef (2)</button>
+        <button>Cleaner (5)</button>     
+    </div>
+    <div class="jobs">
+        <button>Deliery Man (4)</button>
+        <button>Hotel Manager (1)</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = kitchen()">Kitchen Helper (5)</button>
+        <button>Receptionist (3)</button>
+        <button>Room Keeper (4)</button>
+    </div>
+    <div class="jobs">
+        <button type="button" onclick="document.getElementById('demo').innerHTML = waiter()";>Waiter/Waitress (3)</button>   
+    </div>
+    <!-- end job title buttons -->  
+
+    <!-- Generate table  -->
+    <div id="demo"></div>
+
+    <script>
+        function kitchen(){
+        var x = "<table><tr><td class='c1'><img src='images/grand.jpg'></td><td class='c2'><a>Kitchen Helpers</a><br>Grand Resort<br>Negambo</td><td class='c3'><a href='apply.html'>Apply</a></td></tr><tr><td class='c1'><img src='images/mount-lavinia.png'></td><td class='c2'><a>Kitchen Helpers</a><br>Mount Lavinia<br>Kandy</td><td class='c3'><a href='apply.html'>Apply</a></td></tr><tr><td class='c1'><img src='images/jetwing.png'></td><td class='c2'><a>Kitchen Helpers</a><br>Jetwing Hotel<br>Galle</td><td class='c3'><a href='apply.html'>Apply</a></td></tr><tr><td class='c1'><img src='images/kingsbury.jpg'></td><td class='c2'><a>Kitchen Helpers</a><br>The Kingsbury<br>Colombo</td><td class='c3'><a href='apply.html'>Apply</a></td></tr><tr><td class='c1'><img src='images/clarion.jpg'></td><td class='c2'><a>Kitchen Helpers</a><br>Clarion Hotel<br>Negambo</td><td class='c3'><a href='apply.html'>Apply</a></td></tr></table>";
+            return x;
+        }
+
+        function waiter(){
+        var x = "<table><tr><td class='c1'><img src='images/grand.jpg'></td><td class='c2'><a>Waiter/Waitress</a><br>Grand Resort<br>Negambo</td><td class='c3'><a href='apply.html'>Apply</a></td></tr><tr><td class='c1'><img src='images/jetwing.png'></td><td class='c2'><a>Waiter/Waitress</a><br>Jetwing Hotel<br>Galle</td><td class='c3'><a href='apply.html'>Apply</a></td></tr><tr><td class='c1'><img src='images/kingsbury.jpg'></td><td class='c2'><a>Waiter/Waitress</a><br>The Kingsbury<br>Colombo</td><td class='c3'><a href='apply.html'>Apply</a></td></tr></table>";
+            return x;
+        }
+    </script>
+    <!-- end of Generate table  -->
+
+    <!-- end of main  -->    
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p style="font-weight:bold; font-size: 15px;"><a href="terms.html">Terms</a> <a1>|</a1> 
+          <a href="BusinessSol.html" >Business Solutions</a> <a1>|</a1> 
+          <a href="aboutUs.html">About Us</a><br>
+        <b style="font-weight:normal; font-size: 12px;">Copyright © 2020 Rooms and Meals. All rights reserved.</b></p>
+    </div>
+    <!-- end of footer -->
+</body>
+</html>

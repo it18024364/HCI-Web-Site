@@ -1,0 +1,198 @@
+/* header style */
+    
+    /* Style the header with a grey background and some padding */
+    .header {
+        overflow: hidden;
+        background-color:#303030;
+        padding: 5px 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      
+      /* Style the header links */
+      .header a {
+        float: left;
+        color:lightgray;
+        text-align: center;
+        padding: 12px;
+        margin: 10px;
+        text-decoration: none;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 10px;
+        border-radius: 4px;
+      }
+      
+      /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+      .header img.logo {
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      .header b 
+{       color: lightgray;
+        font-size: 28px;
+        margin-left: 60px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: Arial, Helvetica, sans-serif;
+       }
+      .header b:hover {
+        color: #D4AC0D;
+      }
+      
+      /* Change the background color on mouse-over */
+      .header a:hover {
+        background-color: #D4AC0D;
+        color: black;
+      }
+      
+      /* Style the active/current link*/
+      .header a.active {
+        background-color:#D4AC0D;
+        color: black;
+      }
+      
+      /* Float the link section to the right */
+      .header-right {
+        float: right;
+        padding-right: 30px
+      }
+      
+      /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+      }
+/* end of header style */
+
+
+body {
+  background-color: 	#f1f1f1;
+  margin: 0px;
+  font-family: Arial;
+}
+
+    .blur{
+        background-image: url("/images/kitchen-blur.jpg");
+        width: 90%;
+        padding: 2%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .blur img{
+        border-radius: 50%;   
+    }
+    .blur a.full-time{
+        margin-right: 20px;
+        padding: 3px;
+        border: 1px solid;
+        background-color:#D4AC0D ;
+        border-radius: 5px;
+    }
+    
+
+    .details{
+        width: 90%;
+        margin:auto
+    }
+    .details h2{
+        color: #303030;
+    }
+    ul {
+        list-style: none;
+    }
+    .details ul li::before{
+        content: "\2022";
+        color: #D4AC0D;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+    }
+
+/* form style */
+    input[type=text]{
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: medium;
+    }
+    input[type=submit] {
+        width: 90%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    input[type=file]{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .form{
+        width: 90%;
+        border-radius: 5px;
+        margin-top: 2.5%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form button{
+       background-color: #303030;
+       padding: 5px;
+       border-radius: 5px;
+       margin-top: 5px;
+    }
+
+/* form style */
+
+/* footer style */
+    .footer {
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 5px;
+    margin-top: 100px;
+    background-color: #303030;
+    color:lightgray;
+    text-align: center;
+    }
+
+    .footer a{
+      text-decoration: none;
+      color: lightgray;
+    }
+    .footer a:hover {
+    color: #D4AC0D;
+    }
+    
+/* end of footer style */
