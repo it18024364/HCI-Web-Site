@@ -1,0 +1,196 @@
+/* header style */
+    
+    /* Style the header with a grey background and some padding */
+    .header {
+        overflow: hidden;
+        background-color:#303030;
+        padding: 5px 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      
+      /* Style the header links */
+      .header a {
+        float: left;
+        color:lightgray;
+        text-align: center;
+        padding: 12px;
+        margin: 10px;
+        text-decoration: none;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 10px;
+        border-radius: 4px;
+      }
+      
+      /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+      .header img.logo {
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      .header b {       
+        color: lightgray;
+        font-size: 28px;
+        margin-left: 60px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: Arial, Helvetica, sans-serif;
+       }
+      .header b:hover {
+        color: #D4AC0D;
+      }
+      
+      /* Change the background color on mouse-over */
+      .header a:hover {
+        background-color: #D4AC0D;
+        color: black;
+      }
+      
+      /* Style the active/current link*/
+      .header a.active {
+        background-color:#D4AC0D;
+        color: black;
+      }
+      
+      /* Float the link section to the right */
+      .header-right {
+        float: right;
+        padding-right: 30px;
+      }
+      
+      /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+      }
+/* end of header style */
+
+ *:not(.header) {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: 	#f1f1f1;
+  margin: 0px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.main h2{
+  margin-top: 75px;
+  margin-left: 300px;
+  color: #696969;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.content img{
+  height: 150px;
+}
+.content a.topic h3:hover{
+  color: #696969;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* pagination style */
+.pagination{
+  align-items: center;
+  margin-left: 75%;
+  
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #BEBEBE;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/* pagination style */
+
+/* footer style */
+    .footer {
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 5px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #303030;
+    color:lightgray;
+    text-align: center;
+    }
+
+    .footer a{
+      text-decoration: none;
+      color: lightgray;
+    }
+    .footer a:hover {
+    color: #D4AC0D;
+    }
+    
+/* end of footer style */
